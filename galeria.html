@@ -1,0 +1,134 @@
+<html >
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Galería</title>
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/estilo-btn-input-field.css">
+		<nav class="green darken-4">
+		    <div class="nav-wrapper">
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		       <li><a href="principal.html">Página Principal</a></li>
+		       <li><a href="horarios.php">Horarios</a></li>
+		        <li><a href="galeria.html">Galeria</a></li>
+		      	<li><a href="iniciar_sesion.php">Iniciar Sesión</a></li>
+		      </ul>
+		    </div>
+  		</nav>
+			
+  	</head>
+  <main>
+	<body>
+		<div class="container">
+			<br><br>
+			<div class="slider">
+		    	<ul class="slides">
+		      		<li>
+		        		<img src="images/imagenes/1.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/2.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/3.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/4.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/5.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/6.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/7.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/8.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/9.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/10.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/11.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/12.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/13.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/14.jpg">
+		      		</li>
+		      		<li>
+		        		<img src="images/imagenes/15.jpg">
+		      		</li>
+		    	</ul>
+		    </div>
+		    <br><br>
+		    <!--BOTONES PARA SIG. ATRÁS. PAUSE y START-->
+		    <center>
+			    <button title="Imagen Anterior" onClick="prev()" class="btn green darken-4"><i class="material-icons">skip_previous</i></button>
+	            <button title="Siguiente Imagen" onClick="next()" class="btn green darken-4"><i class="material-icons">skip_next</i></button>
+	            <button title="Pausar Presentación" onClick="pause()" class="btn green darken-4"><i class="material-icons">pause</i></button>
+	            <button title="Iniciar/Reiniciar Presentación" onClick="start()" class="btn green darken-4"><i class="material-icons">play_arrow</i></button>
+			</center>
+			<br><br>
+
+	</body>
+</main>
+
+
+<footer class="page-footer green darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Contacto</h5>
+                <p class="grey-text text-lighten-4">Av. Tecnológico 2000 Col. La Perla, Sombrerete Zacatecas.<br>Tels:<br>01 433 93 5 22 01 y 93 5 22 02</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <center>
+                	<a href="https://www.facebook.com/Deportes-y-Cultura-ITSZO-673018056094238/?fref=ts"><img height="150" src="images/deportes.jpg"></a>
+            	</center>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div align="right" class="container">
+            © 2016 ITSZO All rights reserved.
+		    Created by students of the race <a href="https://www.facebook.com/Sistemas-ITSZO-106636909366496/?fref=ts">ISC</a>
+            </div>
+          </div>
+        </footer>
+<!--Llamadas a los javascripts-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script>
+		function next(){
+      	$('.slider').slider('next');
+	    }
+
+	    function prev(){
+	      $('.slider').slider('prev');
+	    }
+
+	    function pause(){
+	      $('.slider').slider('pause');
+	    }
+
+	    function start(){
+	      $('.slider').slider('start');
+	    }
+		$(document).ready(function(){
+			$('.slider').slider({
+				indicators: false
+				});
+		});
+		</script>
+</html>
+
